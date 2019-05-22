@@ -1,0 +1,5 @@
+string = input("Enter a comma separated word list:\n")
+stringl = string.split(",")
+stringl.sort()
+(",").join(stringl)
+print(stringl)
