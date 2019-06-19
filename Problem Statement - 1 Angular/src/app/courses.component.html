@@ -1,0 +1,13 @@
+<div #chart *ngFor='let j of props.data; index as i'>
+      <h1><font size="2">Section : {{section[i]}}</font></h1>   
+      <h1><font size="2">CourseName : {{courses[i]}}</font></h1>
+      <google-chart #chart
+      [title]="props.title[i]"
+      [type]="props.type"
+      [data]="props.data[i]"
+      [columnNames]="columnNames"
+      [options]="options"
+      [width]="width"
+      [height]="height">
+</google-chart>   
+</div>
